@@ -1,6 +1,7 @@
 
 # seer <img src="logo/seer.png" align="right" height="200"/>
 
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/seer)](https://CRAN.R-project.org/package=seer)
 [![Project Status: Active ? The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
@@ -20,7 +21,13 @@ framework **FFORMS** (**F**eature-based **FOR**ecast **M**odel
 
 ## Installation
 
-You can install seer from github with:
+You could install the stable version on CRAN:
+
+``` r
+install.packages("seer")
+```
+
+You could install the development version from Github using
 
 ``` r
 # install.packages("devtools")
@@ -65,18 +72,18 @@ simulated_arima
 #> Start = 1989 
 #> End = 2008 
 #> Frequency = 1 
-#>  [1] 5369.544 5729.079 6149.873 6507.199 6843.924 7252.749 7621.885 8017.953
-#>  [9] 8294.018 8583.317 8767.881 8720.994 8725.451 8684.899 8639.299 8443.937
-#> [17] 8149.241 7884.076 7659.592 7350.185
+#>  [1]  5570.194  6175.587  6737.455  7172.934  7692.446  8260.463  8862.822
+#>  [8]  9318.833  9754.845 10173.877 10503.480 10731.675 11034.088 11446.391
+#> [15] 11774.318 12166.994 12640.379 13234.508 13870.481 14364.186
 #> 
 #> $N0001[[2]]
 #> Time Series:
 #> Start = 1989 
 #> End = 2008 
 #> Frequency = 1 
-#>  [1]  5393.368  5795.287  6117.000  6446.731  6684.484  7058.328  7514.408
-#>  [8]  7950.910  8302.960  8665.244  9097.967  9549.965  9907.980 10437.311
-#> [15] 10861.756 11256.578 11881.738 12366.993 12779.508 12997.572
+#>  [1] 5378.075 5795.233 6268.063 6845.178 7209.492 7489.012 7771.217 8181.615
+#>  [9] 8599.027 8854.889 9163.976 9452.008 9535.338 9496.047 9492.168 9429.858
+#> [17] 9235.976 8975.386 8757.015 8395.180
 #> 
 #> 
 #> $N0002
@@ -85,18 +92,18 @@ simulated_arima
 #> Start = 1989 
 #> End = 2008 
 #> Frequency = 1 
-#>  [1] 4561.972 4814.660 4633.310 4686.417 5085.693 5123.139 4834.242 4418.133
-#>  [9] 5186.091 5277.434 4563.678 4050.867 4189.216 5336.151 6466.374 8109.297
-#> [17] 9391.749 9687.012 9382.672 7839.268
+#>  [1] 4869.718 4091.624 4202.994 3993.931 4470.837 4359.409 5300.641 5311.870
+#>  [9] 5259.591 4919.559 6189.519 5860.118 4953.813 5102.404 4869.983 3485.111
+#> [17] 4085.780 4207.551 3938.959 5472.136
 #> 
 #> $N0002[[2]]
 #> Time Series:
 #> Start = 1989 
 #> End = 2008 
 #> Frequency = 1 
-#>  [1] 4328.984 5473.594 6121.650 5553.658 5631.551 5830.288 5427.147 5322.990
-#>  [9] 5968.188 6473.501 6192.066 5953.731 5994.102 4523.225 4488.522 5208.188
-#> [17] 5264.165 4867.870 4324.461 3389.217
+#>  [1] 5187.0120 5877.9544 5125.4700 4904.6038 3979.0852 4805.9765 5853.8952
+#>  [8] 5236.6049 5320.8282 4410.9000 3638.2943 3510.4286 3896.0295 2977.3216
+#> [15] 1901.7726 1503.2627 1397.3442 1514.6785  995.8874  894.7566
 ```
 
 Similarly, `sim_etsbased` can be used to simulate time series based on
@@ -141,12 +148,12 @@ features_simulated_arima <- lapply(simulated_arima, function(temp){
 fea_sim <- lapply(features_simulated_arima, function(temp){do.call(rbind, temp)})
 do.call(rbind, fea_sim)
 #> # A tibble: 4 x 25
-#>   entropy lumpiness stability hurst  trend spikiness linearity curvature e_acf1
-#> *   <dbl>     <dbl>     <dbl> <dbl>  <dbl>     <dbl>     <dbl>     <dbl>  <dbl>
-#> 1   0.775         0         0 0.973 0.995    2.33e-7    3.41      -0.729 0.600 
-#> 2   0.767         0         0 0.973 0.999    6.71e-9    3.62       0.140 0.237 
-#> 3   0.986         0         0 0.500 0.0584   7.30e-3   -0.0925    -0.713 0.0383
-#> 4   0.986         0         0 0.500 0.383    3.33e-3    0.512     -1.35  0.0357
+#>   entropy lumpiness stability hurst trend spikiness linearity curvature e_acf1
+#> *   <dbl>     <dbl>     <dbl> <dbl> <dbl>     <dbl>     <dbl>     <dbl>  <dbl>
+#> 1   0.768         0         0 0.973 0.999   3.13e-9      3.56    -0.322 0.439 
+#> 2   0.774         0         0 0.973 0.996   1.99e-7      3.55    -0.454 0.216 
+#> 3   0.924         0         0 0.857 0.606   1.14e-3      2.09    -0.153 0.0178
+#> 4   0.918         0         0 0.895 0.679   1.11e-3     -2.41    -1.08  0.175 
 #> # … with 16 more variables: y_acf1 <dbl>, diff1y_acf1 <dbl>, diff2y_acf1 <dbl>,
 #> #   y_pacf5 <dbl>, diff1y_pacf5 <dbl>, diff2y_pacf5 <dbl>, nonlinearity <dbl>,
 #> #   lmres_acf1 <dbl>, ur_pp <dbl>, ur_kpss <dbl>, N <int>, y_acf5 <dbl>,
@@ -185,8 +192,8 @@ accuracy_info <- fcast_accuracy(tslist=tslist, models= c("arima","ets","rw","rwd
 accuracy_info
 #> $accuracy
 #>         arima       ets       rw       rwd    theta        nn
-#> [1,] 1.566974 1.5636089 7.703518 4.2035176 6.017236 2.5621289
-#> [2,] 1.698388 0.9229687 1.698388 0.6123443 1.096000 0.2803508
+#> [1,] 1.566974 1.5636089 7.703518 4.2035176 6.017236 2.5817848
+#> [2,] 1.698388 0.9229687 1.698388 0.6123443 1.096000 0.2797567
 #> 
 #> $ARIMA
 #> [1] "ARIMA(0,2,0)" "ARIMA(0,1,0)"
@@ -242,12 +249,12 @@ accuracy_info
 #> 
 #> $forecasts$nn
 #>          [,1]     [,2]
-#> [1,] 5509.039 4788.626
-#> [2,] 6056.784 5058.294
-#> [3,] 6525.291 5149.697
-#> [4,] 6880.236 5176.092
-#> [5,] 7121.104 5183.325
-#> [6,] 7271.150 5185.277
+#> [1,] 5508.903 4791.327
+#> [2,] 6055.437 5061.321
+#> [3,] 6521.419 5151.862
+#> [4,] 6872.999 5177.666
+#> [5,] 7110.509 5184.642
+#> [6,] 7257.809 5186.500
 ```
 
 **4. Construct a dataframe of input:features and output:lables to train
@@ -321,13 +328,13 @@ predictedlabels_m3 <- rf$predictions
 table(predictedlabels_m3)
 #> predictedlabels_m3
 #>                 ARIMA            ARMA/AR/MA       ETS-dampedtrend 
-#>                    63                     3                     0 
+#>                    63                     0                     0 
 #> ETS-notrendnoseasonal             ETS-trend                    nn 
-#>                     4                    22                    11 
+#>                     4                    26                    15 
 #>                    rw                   rwd                 theta 
-#>                     5                   528                     5 
+#>                     2                   527                     3 
 #>                    wn 
-#>                     4
+#>                     5
 
 # to obtain the random forest for future use
 randomforest <- rf$randomforest
