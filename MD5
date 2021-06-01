@@ -1,4 +1,4 @@
-9d43ea61adfe6146c76e72b4a556aeaa *DESCRIPTION
+a70d7200c5f4f6ff9485280c285775fa *DESCRIPTION
 234a4296138afd7eca6abce1dfac6da3 *NAMESPACE
 fa48c43791abae86f8a11e735c1a4ab7 *R/build_rf.R
 8e03450ec2f549cf9856034c13d4028a *R/cal_MASE.R
@@ -23,7 +23,7 @@ a5dbd06e9bb2e3e682a9fd5c9bc76ff6 *R/features.R
 ad67619c0a6295700353e5ee31d2b657 *R/simulate_mstlbased.R
 fb36558d798fe8ce6fdba81b966260a6 *R/split_names.R
 033c478cfa527dc0a7773bd3c41ea8f1 *R/stlar.R
-4f0f4865ce4cdfa3202b0015a3dfeb00 *README.md
+9a5c2b985fcf7e07600e440dfbaa1b87 *README.md
 a391073261f28ee54bcb126706264c63 *man/accuracy_arima.Rd
 e5cca1466a91d005731cd4d84886d654 *man/accuracy_ets.Rd
 cb7707486e78b9586e03eaa7bc741dec *man/accuracy_mstl.Rd
@@ -62,7 +62,7 @@ d4bd4e7b9d7521cbdb461cef8cbe010f *man/sim_mstlbased.Rd
 3f9d0d2679359d9adea7999335f1f14d *man/stlar.Rd
 b8a1b9fef07af3a70e37b3e1aa38bb4d *man/unitroot.Rd
 1278a06d4041ccf35cb59f44fefdff74 *tests/testthat.R
-1c9e63adbe51110879633dc53fe2aeb1 *tests/testthat/test-fcast_accuracy.R
+bd603539d5da2607c263d1717b7851a0 *tests/testthat/test-fcast_accuracy.R
 b008dd528d1000e6784aa7502f30e51e *tests/testthat/test-feature_cal.R
 e2873cd5e4217f4e4bf613e55f5cf703 *tests/testthat/test-fforms_combination.R
 b1969fb8ee99808135a9ae069ccca54b *tests/testthat/test-fforms_ensemble.R
