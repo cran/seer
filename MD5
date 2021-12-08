@@ -1,4 +1,4 @@
-a70d7200c5f4f6ff9485280c285775fa *DESCRIPTION
+0873e4acc74f6e8dba8b2aca6c790fd6 *DESCRIPTION
 234a4296138afd7eca6abce1dfac6da3 *NAMESPACE
 fa48c43791abae86f8a11e735c1a4ab7 *R/build_rf.R
 8e03450ec2f549cf9856034c13d4028a *R/cal_MASE.R
@@ -13,7 +13,7 @@ fa48c43791abae86f8a11e735c1a4ab7 *R/build_rf.R
 b974fe5ba9bb07df3b3c9a70d1949630 *R/fcast_accuracy.R
 dbd004f2d54a48bd6ec5d232162a3816 *R/feature_cal.R
 a5dbd06e9bb2e3e682a9fd5c9bc76ff6 *R/features.R
-753bd281f408d22a138e52bb42bcc9b8 *R/fforms_combination.R
+8ad8abf5d273639597f4337a33f91692 *R/fforms_combination.R
 57ea9c6bb1c5fa742c0d831864e2ae12 *R/fforms_ensemble.R
 82300da5bc2a72883bbba52a8d0c1e82 *R/modelfitting.R
 5718053c36d172662f7b7813fe076202 *R/prepare_trainingset.R
@@ -50,7 +50,7 @@ ea5b11a64bc91e8b590ce98c52d75bd7 *man/combination_forecast_inside.Rd
 32552f6b1199dd9c32dc286a96b59b7c *man/convert_msts.Rd
 89c2dbd876f5f207c55db65b313df123 *man/e_acf1.Rd
 23fa2d8b3d76eaf958f96c10c70468ad *man/fcast_accuracy.Rd
-ce89d395ed4025de57b45b13ddbab4b7 *man/fforms_combinationforecast.Rd
+14eab35c4c4b9157189333781c7aab3f *man/fforms_combinationforecast.Rd
 685aa9e096ea884b491690620d3038fa *man/fforms_ensemble.Rd
 3277277159688c515739c6e3ccbae1bc *man/holtWinter_parameters.Rd
 68ac9234d3fb1fd9ea1fa656f830a138 *man/prepare_trainingset.Rd
