@@ -1,7 +1,7 @@
 Package: seer
 Type: Package
 Title: Feature-Based Forecast Model Selection
-Version: 1.1.7
+Version: 1.1.8
 Authors@R: c(
     person("Thiyanga", "Talagala", email = "tstalagala@gmail.com", role = c("aut", "cre"), comment=c(ORCID = "0000-0002-0656-9789")),
     person("Rob J", "Hyndman", role = c("ths", "aut"), comment = c(ORCID = "0000-0002-2140-5352")),
@@ -14,15 +14,15 @@ BugReports: https://github.com/thiyangt/seer/issues
 Depends: R (>= 3.2.3)
 Imports: stats, urca, forecast (>= 8.3), dplyr, magrittr, randomForest,
         forecTheta, stringr, tibble, purrr, future, furrr, utils,
-        tsfeatures, MASS
+        tsfeatures
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Suggests: testthat (>= 2.1.0), covr, repmis, knitr, rmarkdown, ggplot2,
         tidyr, Mcomp, GGally
 NeedsCompilation: no
-Packaged: 2021-12-08 02:23:18 UTC; thiyangashaminitalagala
+Packaged: 2022-10-01 06:53:39 UTC; thiyangashaminitalagala
 Author: Thiyanga Talagala [aut, cre] (<https://orcid.org/0000-0002-0656-9789>),
   Rob J Hyndman [ths, aut] (<https://orcid.org/0000-0002-2140-5352>),
   George Athanasopoulos [ths, aut]
 Repository: CRAN
-Date/Publication: 2021-12-08 05:20:02 UTC
+Date/Publication: 2022-10-01 07:10:02 UTC
